@@ -79,6 +79,11 @@ h1, h2, h3 { font-family: var(--fonte-disp); font-weight: 540; line-height: 1.08
 }
 .nav__links a:hover { opacity: 1; color: var(--osso); }
 @media (min-width: 760px) { .nav__links { display: flex; } }
+.nav__right { display: flex; align-items: center; gap: 1.3rem; }
+.nav__social { display: flex; align-items: center; gap: .85rem; }
+.nav__social a { color: #fff; opacity: .9; display: inline-flex; text-shadow: 0 1px 10px rgba(0,0,0,.4); }
+.nav__social a:hover { opacity: 1; color: var(--osso); }
+.nav__social svg { width: 19px; height: 19px; fill: currentColor; }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -191,6 +196,10 @@ h1, h2, h3 { font-family: var(--fonte-disp); font-weight: 540; line-height: 1.08
 .rodape a { color: var(--tan); text-decoration: none; }
 .rodape a:hover { text-decoration: underline; }
 .rodape__marca { font-family: var(--fonte-disp); color: #fff; font-size: 1.2rem; display: block; margin-bottom: .6rem; }
+.rodape__redes { display: flex; gap: .7rem; justify-content: center; margin: .2rem 0 1.3rem; }
+.rodape__redes a { display: inline-flex; width: 42px; height: 42px; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,.08); color: #fff; transition: background .2s ease, transform .15s ease; }
+.rodape__redes a:hover { background: var(--fogo); transform: translateY(-2px); }
+.rodape__redes svg { width: 20px; height: 20px; fill: currentColor; }
 
 /* ---------- Reveal on scroll (só esconde se houver JS) ---------- */
 .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
